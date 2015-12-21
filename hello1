@@ -1,3 +1,5 @@
+/* test file to learn about GitHub, and if it is any use */
+
 #include <stdio.h>
 
 int main(int argc, char **argv)

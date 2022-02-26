@@ -8,9 +8,9 @@ let user = {};  // "object literal" syntax
 }
 
 
-funtion helloWorld(){
+function helloWorld(){
   
-  alert("Hello world");
+  alert("Hello world from the js file");
   
 }
 

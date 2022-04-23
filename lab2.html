@@ -34,6 +34,16 @@ scripts - functions
 </script>
 	
 
+	
+<script>	
+printme(printdata){
+cv=canvas1;
+var c = document.getElementById(cv);
+var ctx = c.getContext("2d");
+ctx.font = "italic bold 15pt Arial";
+ctx.fillText(printdata, 10, 100);
+}
+</script>
 
 	
 <!-- 
@@ -84,7 +94,7 @@ page definition
 	
 	
 <h2>JavaScript Lab2</h2>
-<h4>v001.001.005</h4>
+<h4>v001.001.006</h4>
 	
 	
 <p id="demo">demo</p>
@@ -102,6 +112,7 @@ page definition
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
 <button type="button" onclick="helloWorld()">helloWorld()</button>
+<button type="button" onclick="printme("hello there !!")">printme()</button>
 
 	
 

@@ -38,8 +38,8 @@ scripts - functions
 <script>	
 printme(printdata){
 cv=canvas1;
-var c = document.getElementById(cv);
-var ctx = c.getContext("2d");
+c = document.getElementById(cv);
+ctx = c.getContext("2d");
 ctx.font = "italic bold 15pt Arial";
 ctx.fillText(printdata, 10, 100);
 }
@@ -48,10 +48,22 @@ ctx.fillText(printdata, 10, 100);
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
-end scripts
+end script functions
 ^^^^^^^^^^^^^^^^^^^ 
 -->
 	
+	
+
+	
+	
+	
+<!-- HEAD END -->
+	
+</head>
+<body>
+
+<!-- BODY START -->
+
 	
 
 	
@@ -73,17 +85,8 @@ canvas
 vvvvvvvvvvvvvvvvvvv
 end canvas
 ^^^^^^^^^^^^^^^^^^^ 
--->	
+-->		
 	
-	
-	
-<!-- HEAD END -->
-	
-</head>
-<body>
-
-<!-- BODY START -->
-
 	
 	
 <!-- 
@@ -96,7 +99,7 @@ page definition
 <h2>JavaScript Lab2</h2>
 
 <!-- print version -->	
-<h4>v001.001.007</h4>
+<h4>v001.001.008</h4>
 	
 	
 <p id="demo">demo</p>
@@ -121,7 +124,7 @@ page definition
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
-end page
+end page definition
 ^^^^^^^^^^^^^^^^^^^ 
 -->	
 	
@@ -139,10 +142,10 @@ scripts - code
 <script>
 // text fill
 cv=canvas1;
-var c = document.getElementById(cv);
-var ctx = c.getContext("2d");
-ctx.font = "italic bold 15pt Arial";
-ctx.fillText("Hello World", 10, 100);
+c = document.getElementById(cv);
+ctx = c.getContext("2d");
+//ctx.font = "italic bold 15pt Arial";
+ctx.fillText("Hello world", 10, 200);
 
 	
 // build the font style into the cf variable
@@ -162,7 +165,7 @@ ctx.fillText(cf, 20, 140);
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
-end scripts
+end scripts - code
 ^^^^^^^^^^^^^^^^^^^ 
 -->
 	

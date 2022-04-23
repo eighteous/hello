@@ -3,8 +3,16 @@
 	JavaScript training ground
 </title>
 <head>
-  
 
+<!-- HEAD START -->
+  
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+scripts - functions 
+^^^^^^^^^^^^^^^^^^^ 
+-->
+	
+	
 <script>
   function fnChgPara() {
   document.getElementById("demo2").innerHTML = "Paragraph changed.";
@@ -25,18 +33,63 @@
   function helloWorld(){alert("Hello world from the js file");}	
 </script>
 	
+
+
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+end scripts
+^^^^^^^^^^^^^^^^^^^ 
+-->
+	
+	
+
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+canvas
+^^^^^^^^^^^^^^^^^^^ 
+-->
+	
+
+<!-- setup a canvas 800x600 -->
+<canvas id=canvas1 width="800" height="600" style="border:5px solid #0000ff;">
+</canvas>
+	
+
+	
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+end canvas
+^^^^^^^^^^^^^^^^^^^ 
+-->	
+	
+	
+	
+<!-- HEAD END -->
 	
 </head>
 <body>
-  
 
+<!-- BODY START -->
+
+	
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+page definition
+^^^^^^^^^^^^^^^^^^^ 
+-->
+	
+	
 <h2>JavaScript Lab2</h2>
-<h4>v001.001.004</h4>
+<h4>v001.001.005</h4>
+	
+	
 <p id="demo">demo</p>
 
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-
-
 
 <h2>A Web Page</h2>
 	
@@ -49,9 +102,59 @@
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
 <button type="button" onclick="helloWorld()">helloWorld()</button>
+
+	
+
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+end page
+^^^^^^^^^^^^^^^^^^^ 
+-->	
+	
+
+	
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+scripts - code 
+^^^^^^^^^^^^^^^^^^^ 
+-->
 	
 	
 
+<script>
+// text fill
+cv=canvas1;
+var c = document.getElementById(cv);
+var ctx = c.getContext("2d");
+ctx.font = "italic bold 15pt Arial";
+ctx.fillText("Hello World", 10, 100);
+
+	
+// build the font style into the cf variable
+
+/*	
+let cf = "italic " + "bold " + "20pt " + "Courier"; 
+ctx.font = cf;
+ctx.fillStyle = "Olive";
+ctx.fillText(cf, 20, 140);
+*/
+	
+
+</script>
+	
+	
+	
+	
+<!-- 
+vvvvvvvvvvvvvvvvvvv
+end scripts
+^^^^^^^^^^^^^^^^^^^ 
+-->
+	
+
+<!-- BODY END -->
 
 </body>
 </html>

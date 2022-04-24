@@ -114,6 +114,7 @@ function fnChgNum() {
 	// canvas functions
 	// ^^^^^^^^^^^^^^^^
 	
+	// original and testing canvas printing function
 function fnPrintMe1(printData){
   cv="canvas1";
   c = document.getElementById(cv);
@@ -124,6 +125,7 @@ function fnPrintMe1(printData){
 	
 	
 
+	// CANVAS PRINTING FUNCTION
 	/* 
 	on going updated function for printing to a canvas [ fnPrintMe(printData) ]
 	fnPrintME() parameters
@@ -142,7 +144,7 @@ function fnPrintMe(cvData, locX, LocY, printData){
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 14pt Arial";
-  ctx.fillText(printData, 10, 100);
+  ctx.fillText(printData, locX, locY);
 }	
 	
 	

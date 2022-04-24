@@ -139,12 +139,12 @@ function fnPrintMe1(printData){
 
 	*/
 	
-function fnPrintMe(cvData, locX, LocY, printData){
+function fnPrintMe(cvData, locX, locY, printData){
   cv=cvData;
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 14pt Arial";
-  ctx.fillText(printData, 10,100);
+  ctx.fillText(printData, locX locY);
 }	
 	
 	
@@ -279,16 +279,19 @@ main web page display area
 VERSION TABLE 
 ****************** -->	
 
-	<h4>	Version table </h4>
+	<h4>	Version Table -- reverse</h4>
 	<pre>
-	v001.001.013.20220424.17:39 | misc ; alerts ; canvas ; edit HTML doc | functions start with 'fn' and are camel case \|/ TESTED OK
-	v001.001.013.20220424.19:59 | add line drawing \|/ TESTED OK
-	v001.001.013.20220424.20:02 | add error messasge function | change alert function naming to 'fnAlert' and use camel case \|/ TESTED OK
+	
+	v001.001.013.20220424.21:14 | move version table to the end ; reverse the version table | location parameters for fnPrintMe() ; locX, locY \|/ 
 	v001.001.013.20220424.20:43 | working on the function fnPrintMe() ; add what canvas to print on 'cvData' | fix version table display \|/ TESTED OK
-	v001.001.013.20220424.21:04 | move version table to the end | location parameters for fnPrintMe() ; locX, locY \|/ 
+	v001.001.013.20220424.20:02 | add error messasge function | change alert function naming to 'fnAlert' and use camel case \|/ TESTED OK
+	v001.001.013.20220424.19:59 | add line drawing \|/ TESTED OK
+	v001.001.013.20220424.17:39 | misc ; alerts ; canvas ; edit HTML doc | functions start with 'fn' and are camel case \|/ TESTED OK
 	
 	
-	TDL 
+	
+	
+	TDL -- no order 
 	| add line drawing function -- parameters (canvas ; from x,y ; to x,y ; colour ; width ; style?) \|/ 
 	| add canvas text function -- parameters (canvas ; location x,y ; font size ; font style [italic ; bold ; underline ; etc] ; font colour ; other?? ) \|/ 
 	

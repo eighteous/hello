@@ -130,8 +130,8 @@ function fnPrintMe1(printData){
 	on going updated function for printing to a canvas [ fnPrintMe(printData) ]
 	fnPrintME() parameters
 		canvas ; cv Data
-		location x ; locaX
-		location y ; locaY
+		location x ; locX
+		location y ; locY
 		
 		font size ; 
 		font style ; 
@@ -139,12 +139,12 @@ function fnPrintMe1(printData){
 
 	*/
 	
-function fnPrintMe(cvData, locaX, LocaY, printData){
+function fnPrintMe(cvData, locX, LocY, printData){
   cv=cvData;
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 14pt Arial";
-  ctx.fillText(printData, locaX, locaY);
+  ctx.fillText(printData, 10,100);
 }	
 	
 	
@@ -285,7 +285,7 @@ VERSION TABLE
 	v001.001.013.20220424.19:59 | add line drawing \|/ TESTED OK
 	v001.001.013.20220424.20:02 | add error messasge function | change alert function naming to 'fnAlert' and use camel case \|/ TESTED OK
 	v001.001.013.20220424.20:43 | working on the function fnPrintMe() ; add what canvas to print on 'cvData' | fix version table display \|/ TESTED OK
-	v001.001.013.20220424.20:45 | move version table to the end | location parameters for fnPrintMe() ; locX, locY \|/ 
+	v001.001.013.20220424.21:04 | move version table to the end | location parameters for fnPrintMe() ; locX, locY \|/ 
 	
 	
 	TDL 

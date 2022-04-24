@@ -10,8 +10,11 @@ view html files The most comfortable way to preview HTML files on GitHub is to g
 
 
 
+git@github.com:eighteous/hello.git
 
+git@github.com:eighteous/eighteous.git
 
+https://github.com/eighteous/eighteous.git
 
 
 

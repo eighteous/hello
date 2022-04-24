@@ -94,6 +94,8 @@ function fnChgNum() {
 </script>
 
 	
+	
+	
 <script>
 	// vvvvvvvvvvvvvvvv
 	// canvas functions
@@ -108,13 +110,22 @@ function fnPrintMe(printdata){
 }
 </script>
 
+	
+	
+	
+	
 		
 <script>	
 	// vvvvvvvvvvvvvvv
 	// alert functions
 	// ^^^^^^^^^^^^^^^
 	
-function fnHelloWorld(){alert("Hello world from this file");}	
+function fnAlertHelloWorld(){alert("Hello world from this file");}	
+function fnAlertError1(){alert("Error 1");}	
+function fnAlertError(errMsg){alert(errMsg);}	
+
+
+	
 </script>
 
 
@@ -181,8 +192,14 @@ main web page display area
 print version 
 ****************** -->	
 <h5>
-	v001.001.013.20220424.17:39 | misc
+	
+	v001.001.013.20220424.17:39 | misc | functions start with 'fn' and are camel case
 	v001.001.013.20220424.19:59 | add line drawing
+	v001.001.013.20220424.20:02 | add error messasge function | change alert function naming to 'fnAlert' and use camel case
+	
+	| add line drawing 
+	
+	
 	
 </h5>
 <!-- ****************** -->	
@@ -201,14 +218,28 @@ print version
 <p id="demo3">demo 3</p>
 <p id="demo4">demo 4</p>
 	
-<!-- buttons to call functions -->
+
+	
+<!-- test buttons to call functions -->
+
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
 <button type="button" onclick="fnPrintMe('>>button pressed<<')">printme()</button>
 
-<button type="button" onclick="fnHelloWorld()">helloWorld()</button>
-	
+<button type="button" onclick="fnAlertHelloWorld()">fnAlertHelloWorld()</button>
 
+<!-- END test buttons to call functions -->
+	
+	
+	
+	
+<!-- test error message functions -->
+
+	<button type="button" onclick="fnAlertError1()">fnAlertError1()</button>
+	<button type="button" onclick="fnAlertError('print out this error message')">print out an error message</button>
+	
+<!-- END test error message functions -->
+	
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
@@ -239,7 +270,7 @@ cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");
 ctx.font = "italic bold 50pt Arial";
-ctx.fillText("Hello world", 10, 200);
+ctx.fillText("General Ledger", 10, 200);
 
 	
 // build the font style into the cf variable

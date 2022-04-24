@@ -101,13 +101,36 @@ function fnChgNum() {
 	// canvas functions
 	// ^^^^^^^^^^^^^^^^
 	
-function fnPrintMe(printdata){
+function fnPrintMe1(printData){
   cv="canvas1";
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 25pt Arial";
-  ctx.fillText(printdata, 10, 100);
+  ctx.fillText(printData, 10, 100);
 }
+	
+	
+
+	/* 
+	on going updated function for printing to a canvas [ fnPrintMe(printData) ]
+	fnPrintME() parameters
+		canvas ; cv Data
+		location x,y ; 
+		font size ; 
+		font style ; 
+		text to print ; printData
+
+	*/
+	
+function fnPrintMe(cvData, printData){
+  cv=cvData;
+  c = document.getElementById(cv);
+  ctx = c.getContext("2d");
+  ctx.font = "italic bold 14pt Arial";
+  ctx.fillText(printData, 10, 100);
+}	
+	
+	
 </script>
 
 	
@@ -192,12 +215,18 @@ main web page display area
 print version 
 ****************** -->	
 <h5>
+	Version table
+	v001.001.013.20220424.17:39 | misc ; alerts ; canvas ; edit HTML doc | functions start with 'fn' and are camel case \|/ TESTED OK
+	v001.001.013.20220424.19:59 | add line drawing \|/ TESTED OK
+	v001.001.013.20220424.20:02 | add error messasge function | change alert function naming to 'fnAlert' and use camel case \|/ TESTED OK
+	v001.001.013.20220424.20:25 | working on the function rnPrintMe() ; add what canvas to print on
 	
-	v001.001.013.20220424.17:39 | misc | functions start with 'fn' and are camel case
-	v001.001.013.20220424.19:59 | add line drawing
-	v001.001.013.20220424.20:02 | add error messasge function | change alert function naming to 'fnAlert' and use camel case
 	
-	| add line drawing 
+	
+	TDL 
+	| add line drawing function -- parameters (canvas ; from x,y ; to x,y ; colour ; width ; style?) \|/ 
+	| add canvas text function -- parameters (canvas ; location x,y ; font size ; font style [italic ; bold ; underline ; etc] ; font colour ; other?? ) \|/ 
+	
 	
 	
 	
@@ -224,7 +253,7 @@ print version
 
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
-<button type="button" onclick="fnPrintMe('>>button pressed<<')">printme()</button>
+<button type="button" onclick="fnPrintMe('canvas1','>>button pressed<<')">fnPrintMe(>>button pressed<<)</button>
 
 <button type="button" onclick="fnAlertHelloWorld()">fnAlertHelloWorld()</button>
 

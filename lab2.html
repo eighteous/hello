@@ -7,11 +7,35 @@
 <!-- HEAD START -->
 
 	
+	
+	
+	
+<!-- 
+vvvvvvvvvvvvvvvvv
+docs & references
+^^^^^^^^^^^^^^^^^
+
+CANVAS TUTORIALS
+^^^^^^^^^^^^^^^^
+https://www.html5canvastutorials.com/tutorials/html5-canvas-text-font-size/
+https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/	
+
+ 
+vvvvvvvvvvvvvvvvvvvvv
+END docs & references
+^^^^^^^^u^^^^^^^^^^^^
+
+-->
+	
+	
+	
+	
+	
   
 <!-- 
-vvvvvvvvvvvvvvvvvvv
+vvvvvvvvvvvvvvvvvvvvvv
 scripts - external (1)
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 place references to extrernal script files here
 haven't worked out how to do this yet in github
 -->
@@ -20,7 +44,7 @@ haven't worked out how to do this yet in github
   
 <!-- 
 vvvvvvvvvvvvvvvvvvvvvvvvvv
-end scripts - external (1)
+END scripts - external (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 -->
 	
@@ -87,7 +111,7 @@ function helloWorld(){alert("Hello world from this file");}
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvvvvvvv
-end script functions (1)
+END script functions (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^ 
 -->
 	
@@ -123,7 +147,7 @@ canvas display areas
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
-end canvas (1)
+END canvas (1)
 ^^^^^^^^^^^^^^^^^^^ 
 -->		
 	
@@ -145,7 +169,11 @@ main web page display area
 <!-- *****************
 print version 
 ****************** -->	
-<h4>v001.001.013.20220424.17:39</h4>
+<h5>
+	v001.001.013.20220424.17:39 | misc
+	v001.001.013.20220424.19:35 | add line drawing
+	
+	</h5>
 <!-- ****************** -->	
 	
 	
@@ -173,7 +201,7 @@ print version
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
-end page definition (1)
+END page definition (1)
 ^^^^^^^^^^^^^^^^^^^ 
 -->	
 	
@@ -190,9 +218,12 @@ main area for JavaScript
 	
 
 <script>
-	
-// text fill
-	
+
+	/*
+vvvvvvvvv	
+text fill
+^^^^^^^^^
+	*/
 cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");
@@ -202,22 +233,88 @@ ctx.fillText("Hello world", 10, 200);
 	
 // build the font style into the cf variable
 
-/*	
+	/*	
 let cf = "italic " + "bold " + "20pt " + "Courier"; 
 ctx.font = cf;
 ctx.fillStyle = "Olive";
 ctx.fillText(cf, 20, 140);
-*/
+	*/
 	
+	
+	/*
+cv="canvas1";
+c = document.getElementById(cv);
+ctx = c.getContext("2d");
+ctx.fillStyle = "Green";
+ctx.font = "10px Arial";
+for (i=15; i<400; i=i+20){
+ctx.fillText(i, 0, i);
+}
+
+
+ctx.font = "italic 8pt Arial";
+for (i=0; i<400; i=i+30){
+ctx.fillText(i, i, 10);
+}
+	*/	
 
 </script>
+	
+
+
+	
+	
+	
+
+<script>
+
+/*
+vvvvvvvvvvvv
+line drawing
+^^^^^^^^^^^^
+*/
+	
+// text fill - moving around the canvas
+// https://www.html5canvastutorials.com/tutorials/html5-canvas-text-font-size/
+// https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/
+
+
+cv="canvas1";
+c = document.getElementById(cv);
+ctx = c.getContext("2d");
+
+
+	// draw a line
+
+	// set line color
+ctx.strokeStyle = '#ff0000'; //red '#ff0000' 
+	// start of line
+ctx.beginPath();
+ctx.moveTo(0, 206);
+	// draw line to here
+ctx.lineTo(400, 206);
+	// line width
+ctx.lineWidth = 10;
+	// draw the line
+ctx.stroke();
+
+
+	// draw a grid
+
+	
+	
+	
+</script>
+	
+	
+	
 	
 	
 	
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
-end scripts - code (1)
+END scripts - code (1)
 ^^^^^^^^^^^^^^^^^^^ 
 -->
 	

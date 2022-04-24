@@ -107,6 +107,15 @@ function fnChgNum() {
   a="open the door";
   document.getElementById("demo4").innerHTML = a;
 }
+	
+	
+function fnChgTable(){
+	document.getElementById("r1c1").innerHTML = "r1c1";
+	
+}
+	
+	
+	
 </script>
 
 	
@@ -250,15 +259,17 @@ main web page display area
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
 <button type="button" onclick="fnPrintMe('canvas1', 100, 100, '>>button pressed<<')">fnPrintMe(>>button pressed<<)</button>
-
-<button type="button" onclick="fnAlertHelloWorld()">fnAlertHelloWorld()</button>
-
+<button type="button" onclick="fnChgTable()">fnChgTable</button>
+	
+	
 <!-- END test buttons to call functions -->
 	
 	
 	
 	
-<!-- test error message functions -->
+<!-- test error message and alert functions -->
+
+<button type="button" onclick="fnAlertHelloWorld()">fnAlertHelloWorld()</button>
 
 	<button type="button" onclick="fnAlertError1()">fnAlertError1()</button>
 	<button type="button" onclick="fnAlertError('print out this error message')">print out an error message</button>
@@ -316,7 +327,7 @@ VERSION TABLE
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
 	
-	v001.001.013.20220424.22:13 | adding a table with id's
+	v001.001.013.20220424.22:13 | adding a table with id's ; change table \|/ 
 	v001.001.013.20220424.22:02 | version table formatting updates \|/ TESTED OK
 	v001.001.013.20220424.21:14 | move version table to the end ; reverse the version table | location parameters for fnPrintMe() ; locX, locY \|/ TESTED OK
 	v001.001.013.20220424.20:43 | working on the function fnPrintMe() ; add what canvas to print on 'cvData' | fix version table display \|/ TESTED OK

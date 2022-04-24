@@ -130,8 +130,8 @@ function fnPrintMe1(printData){
 	on going updated function for printing to a canvas [ fnPrintMe(printData) ]
 	fnPrintME() parameters
 		canvas ; cv Data
-		location x ; locX
-		location y ; locY
+		location x ; locaX
+		location y ; locaY
 		
 		font size ; 
 		font style ; 
@@ -139,12 +139,12 @@ function fnPrintMe1(printData){
 
 	*/
 	
-function fnPrintMe(cvData, locX, LocY, printData){
+function fnPrintMe(cvData, locaX, LocaY, printData){
   cv=cvData;
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 14pt Arial";
-  ctx.fillText(printData, locX, locY);
+  ctx.fillText(printData, locaX, locaY);
 }	
 	
 	

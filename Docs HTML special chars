@@ -1,0 +1,24 @@
+Docs HTML sprecial chars
+
+
+
+
+
+https://mailtrap.io/blog/nbsp/
+
+
+Name	                                    HTML Entity	  Entity Number
+Non-breaking space	                      &nbsp;	 
+Less than (<)	                            &lt;	        <
+More than (>)	                            &gt;	        >
+Ampersand (&)	                            &amp;	        &
+Euro (€)	                                &euro;	      €
+Pound (£)	                                &pound;	      £
+double quotation mark (“)	                &quot;	      “
+single quotation mark (apostrophe) (‘)	  &apos;	      ‘
+
+
+
+
+
+

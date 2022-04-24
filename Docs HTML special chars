@@ -20,5 +20,24 @@ single quotation mark (apostrophe) (‘)	  &apos;	      ‘
 
 
 
+Other spaces available in HTML
+When separating words or other elements, you’re not limited just to a regular and non-breaking space. The list of available white space characters is very long. Here are some of the most commonly used ones:
+
+Name	    HTML Entity	Entity Number
+En space	&ensp;	 
+Em space	&emsp;
+
+Narrow no-break space	–	 
+
+Name	              HTML Entity	Entity Number
+3-per-em space	    &emsp13;	 
+figure space	      &numsp;	 
+punctuation space	  &puncsp;	 
+thin space	        &thinsp;	 
+hair space	        &hairsp;	 
+
+
+
+
 
 

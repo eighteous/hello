@@ -38,37 +38,43 @@ place *all* script functions here\
 	
 	
 <script>
-  function fnChgPara() {
+	// change a paragraph on the webpage
+	// using a string constant
+function fnChgPara() {
   document.getElementById("demo2").innerHTML = "Paragraph changed.";
-  }
+}
 </script>
+	
 		
 <script>	
-  function fnChgNum() {		
+	// change a paragraph on the webpage
+	// using variables
+function fnChgNum() {		
   a=100;
   document.getElementById("demo3").innerHTML = a;
-  a=3;
+  a="open the door";
   document.getElementById("demo4").innerHTML = a;
-  }
+}
 </script>
-
-	
-<script>	
-  function helloWorld(){alert("Hello world from this file");}	
-</script>
-	
 
 	
 <script>	
 function printme(printdata){
-cv="canvas1";
-c = document.getElementById(cv);
-ctx = c.getContext("2d");
-ctx.font = "italic bold 25pt Arial";
-ctx.fillText(printdata, 10, 100);
+  cv="canvas1";
+  c = document.getElementById(cv);
+  ctx = c.getContext("2d");
+  ctx.font = "italic bold 25pt Arial";
+  ctx.fillText(printdata, 10, 100);
 }
 </script>
 
+		
+<script>	
+function helloWorld(){alert("Hello world from this file");}	
+</script>
+
+
+	
 	
 <!-- 
 vvvvvvvvvvvvvvvvvvv
@@ -124,11 +130,17 @@ main web page display area
 	
 <h2>JavaScript Lab2</h2>
 
+	
+	
+	
 <!-- *****************
 print version 
 ****************** -->	
-<h4>v001.001.013</h4>
+<h4>v001.001.013.17:22</h4>
 <!-- ****************** -->	
+	
+	
+	
 	
 <p id="demo">demo</p>
 
@@ -144,9 +156,9 @@ print version
 <!-- buttons to call functions -->
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
-<button type="button" onclick="helloWorld()">helloWorld()</button>
-<button type="button" onclick="printme('hello there !!')">printme()</button>
+<button type="button" onclick="printme('>>button pressed<<')">printme()</button>
 
+<button type="button" onclick="helloWorld()">helloWorld()</button>
 	
 
 	
@@ -169,7 +181,9 @@ main area for JavaScript
 	
 
 <script>
+	
 // text fill
+	
 cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");

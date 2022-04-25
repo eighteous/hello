@@ -90,11 +90,7 @@ style info
 ^^^^^^^^^^
 
 
-
-
-
 1 pixel wide, solid, Black Border
-
 no gaps in the border lines (thin lines)
 <style>
 table, th, td {
@@ -108,7 +104,10 @@ table, th, td {
 right-align a table (with CSS):
 <table style="float:right">
 
-style="color:black"
+change the table text colour:
+<table style="color:red">TABLE
+
+
 
 -->
 	
@@ -342,7 +341,7 @@ main web page display area
 <!-- TABLE with id's-->
 
 <br><br><br><br><br>
-<table style="color:red">TABLE
+<table style="border: 1px solid red">TABLE
   <tr id="h1">
     <th id="h1c1">First</th>
     <th id="h1c2">Last</th> 
@@ -386,7 +385,7 @@ VERSION TABLE
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
 	
-	v001.001.013.20220426.00:20 | table styles \|/
+	v001.001.013.20220426.00:28 | table styles \|/
 	v001.001.013.20220424.22:13 | adding a table with id's ; change table ; \|/ 
 	v001.001.013.20220424.22:02 | version table formatting updates \|/ TESTED OK
 	v001.001.013.20220424.21:14 | move version table to the end ; reverse the version table | location parameters for fnPrintMe() ; locX, locY \|/ TESTED OK

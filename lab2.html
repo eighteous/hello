@@ -231,7 +231,8 @@ function fnPrintMe(printData, cvData, locX, locY ){
   cv=cvData;
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
-  ctx.font = "italic bold 14pt courier";
+  ctx.font = "italic bold 14pt Courier";
+  ctx.font = "14pt Arial";	
   ctx.fillText(printData, locX, locY);
 }	
 
@@ -413,7 +414,7 @@ VERSION TABLE
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
 	
-        v001.001.013.20220501.21:29 | update function fnPrintMe()
+        v001.001.013.20220501.21:30 | update function fnPrintMe()
         v001.001.013.20220426.01:02 | edit on iPhone
 	v001.001.013.20220426.01:02 | table styles \|/
 	v001.001.013.20220424.22:13 | adding a table with id's ; change table ; \|/ 

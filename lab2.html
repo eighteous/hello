@@ -232,8 +232,9 @@ function fnPrintMe(printData, cvData, locX, locY ){
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 14pt Courier";
-  ctx.font = "14pt Arial";	
   ctx.fillText(printData, locX, locY);
+  ctx.font = "14pt Arial";
+  ctx.fillText(printData, locX, locY+40);
 }	
 
 	/*

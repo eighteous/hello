@@ -196,7 +196,12 @@ function fnChgTable(){
 	// canvas functions
 	// ^^^^^^^^^^^^^^^^
 	
+	/*
 	// original and testing canvas printing function
+	vvvvvvvvvvvvvvvvvvv
+	function fnPrintMe1	
+	^^^^^^^^^^^^^^^^^^^
+	*/
 function fnPrintMe1(printData){
   cv="canvas1";
   c = document.getElementById(cv);
@@ -211,23 +216,33 @@ function fnPrintMe1(printData){
 	/* 
 	on going updated function for printing to a canvas [ fnPrintMe(printData) ]
 	fnPrintME() parameters
-		canvas ; cv Data
+		text to print ; printData
+		canvas ID ; cvData
 		location x ; locX
 		location y ; locY
-		
-		font size ; 
-		font style ; 
-		text to print ; printData
+		font name ; fontName
+		font size ; fontSize
+		font style ; fontStyle
+
 
 	*/
 	
-function fnPrintMe(cvData, locX, locY, printData){
+function fnPrintMe(printData, cvData, locX, locY ){
   cv=cvData;
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
-  ctx.font = "italic bold 14pt Arial";
+  ctx.font = "Arial 14pt italic bold";
   ctx.fillText(printData, locX, locY);
 }	
+
+	/*
+	vvvvvvvvvvvvvvvvvvvvvvv
+	END function fnPrintMe1	
+	^^^^^^^^^^^^^^^^^^^^^^^
+	*/
+	
+	
+	
 	
 	
 </script>
@@ -328,7 +343,7 @@ main web page display area
 
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
-<button type="button" onclick="fnPrintMe('canvas1', 100, 300, '>>button pressed<<')">fnPrintMe(>>button pressed<<)</button>
+<button type="button" onclick="fnPrintMe('>>button pressed<<', 'canvas1', 100, 300 )">fnPrintMe(>>button pressed<<)</button>
 <button type="button" onclick="fnChgTable()">fnChgTable</button>
 	
 	
@@ -341,8 +356,8 @@ main web page display area
 
 <button type="button" onclick="fnAlertHelloWorld()">fnAlertHelloWorld()</button>
 
-	<button type="button" onclick="fnAlertError1()">fnAlertError1()</button>
-	<button type="button" onclick="fnAlertError('print out this error message')">print out an error message</button>
+<button type="button" onclick="fnAlertError1()">fnAlertError1()</button>
+<button type="button" onclick="fnAlertError('print out this error message')">print out an error message</button>
 	
 <!-- END test error message functions -->
 	
@@ -398,7 +413,7 @@ VERSION TABLE
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
 	
-
+        v001.001.013.20220501.21:26 | update function fnPrintMe()
         v001.001.013.20220426.01:02 | edit on iPhone
 	v001.001.013.20220426.01:02 | table styles \|/
 	v001.001.013.20220424.22:13 | adding a table with id's ; change table ; \|/ 

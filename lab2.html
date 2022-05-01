@@ -47,6 +47,12 @@ https://javascript.info/dom-nodes
 other URLs
 https://mailtrap.io/blog/nbsp/
 
+
+FONTS
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+https://blog.hubspot.com/website/web-safe-html-css-fonts
+
+
  
 vvvvvvvvvvvvvvvvvvvvv
 END docs & references
@@ -115,6 +121,52 @@ right-align a table (with CSS):
 
 change the table text colour:
 <table style="color:red">TABLE
+
+
+
+
+FONT NAMES
+
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+Best Web Safe Fonts for HTML and CSS
+The following fonts are the best web safe fonts for HTML and CSS:
+
+Arial (sans-serif)
+Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+
+
+
+https://blog.hubspot.com/website/web-safe-html-css-fonts
+
+Arial (sans-serif)
+Arial Black (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Impact (sans-serif)
+Times New Roman (serif)
+Didot (serif)
+Georgia (serif)
+American Typewriter (serif)
+Andalé Mono (monospace)
+Courier (monospace)
+Lucida Console (monospace)
+Monaco (monospace)
+Bradley Hand (cursive)
+Brush Script MT (cursive)
+Luminari (fantasy)
+Comic Sans MS (cursive)
+
+
 
 
 
@@ -211,6 +263,15 @@ function fnPrintMe1(printData){
 }
 	
 	
+function fnPrintMe2(printData, cvData, locX, locY){
+  cv=cvData;
+  c = document.getElementById(cv);
+  ctx = c.getContext("2d");
+  ctx.font = "italic bold 14pt Courier";
+  ctx.fillText(printData, locX, locY);
+  ctx.font = "14pt Arial";
+  ctx.fillText(printData, locX, locY+40);
+	
 
 	// CANVAS PRINTING FUNCTION
 	/* 
@@ -220,21 +281,20 @@ function fnPrintMe1(printData){
 		canvas ID ; cvData
 		location x ; locX
 		location y ; locY
-		font name ; fontName
-		font size ; fontSize
-		font style ; fontStyle
-
+		
+		font style, font size, font name ; fontStyle
 
 	*/
 	
-function fnPrintMe(printData, cvData, locX, locY ){
+	
+	
+function fnPrintMe(printData, cvData, locX, locY, fontStyle){
   cv=cvData;
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
-  ctx.font = "italic bold 14pt Courier";
+  ctx.font = fontStyle;
   ctx.fillText(printData, locX, locY);
-  ctx.font = "14pt Arial";
-  ctx.fillText(printData, locX, locY+40);
+
 }	
 
 	/*
@@ -345,7 +405,7 @@ main web page display area
 
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
-<button type="button" onclick="fnPrintMe('>>button pressed<<', 'canvas1', 100, 300 )">fnPrintMe(>>button pressed<<)</button>
+<button type="button" onclick="fnPrintMe('>>button pressed<<', 'canvas1', 100, 300, '20pt "Courier New"' )">fnPrintMe(>>button pressed<<)</button>
 <button type="button" onclick="fnChgTable()">fnChgTable</button>
 	
 	
@@ -415,7 +475,7 @@ VERSION TABLE
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
 	
-        v001.001.013.20220501.21:30 | update function fnPrintMe()
+        v001.001.013.20220501.21:31 | update function fnPrintMe()
         v001.001.013.20220426.01:02 | edit on iPhone
 	v001.001.013.20220426.01:02 | table styles \|/
 	v001.001.013.20220424.22:13 | adding a table with id's ; change table ; \|/ 

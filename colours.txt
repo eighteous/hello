@@ -1,0 +1,37 @@
+colours.txt
+
+info just about colours
+
+
+
+vvvvvvvvvvvvvvvvv
+>> colour URLs <<
+^^^^^^^^^^^^^^^^^
+
+color picker:
+search google: [html color picker]
+https://www.w3schools.com/colors/colors_picker.asp
+https://www.w3schools.com/colors/colors_picker.asp?colorhex=00BFFF
+https://html-color-codes.info/colors-from-image/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+
+
+
+
+
+vvvvvvvvvvvvv
+>> colours <<
+^^^^^^^^^^^^^
+
+blue
+lightblue
+
+
+
+
+
+
+
+
+
+EOF

@@ -1,0 +1,69 @@
+HTML_URLs.txt
+
+URLS for HTML tags
+
+
+
+	
+	
+	
+	
+<!-- 
+vvvvvvvvvvvvvvvvv
+docs & references
+^^^^^^^^^^^^^^^^^
+
+
+
+show web page in github
+^^^^^^^^^^^^^^^^^^^^^^^
+test c and java script files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+view html files The most comfortable way to preview HTML files on GitHub is to go to 
+https://htmlpreview.github.io/ 
+or just prepend it to the original URL, i.e.: 
+https://htmlpreview.github.io/?https://github.com/eighteous/hello/edit/master/lab2.html
+
+
+
+CANVAS TUTORIALS
+^^^^^^^^^^^^^^^^
+https://www.html5canvastutorials.com/tutorials/html5-canvas-text-font-size/
+https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/	
+
+
+
+JavaScript.info site -- JavaScript tutorial website
+https://javascript.info
+
+
+DOM Tree
+https://javascript.info/dom-nodes
+
+
+
+other URLs
+https://mailtrap.io/blog/nbsp/
+
+
+FONTS
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+https://blog.hubspot.com/website/web-safe-html-css-fonts
+
+
+ 
+vvvvvvvvvvvvvvvvvvvvv
+END docs & references
+^^^^^^^^^^^^^^^^^^^^^
+
+-->
+	
+	
+	
+
+
+
+
+
+
+EOF

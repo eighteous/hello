@@ -1,0 +1,16 @@
+lab2_notes.txt
+
+notes for lab2.html
+
+
+
+vvvvvvvvvv
+>> TAGS <<
+^^^^^^^^^^
+
+change the page background colour
+<body bgcolor=blue>
+
+
+
+

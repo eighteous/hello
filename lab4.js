@@ -8,7 +8,7 @@ let user = {};  // "object literal" syntax
 }
 
 
-function helloWorld(){
+function extHelloWorld(){
   
   alert("Hello world from the js file");
   

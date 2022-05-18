@@ -118,9 +118,16 @@ function fnPrintMe1(printData){
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 25pt Arial";
-  ctx.fillText(printData, 10, 100);
+  ctx.fillText(printData, 10, 10);
 }
 	
+	/*
+cv="canvas1";
+c = document.getElementById(cv);
+ctx = c.getContext("2d");
+ctx.font = "italic bold 50pt Arial";
+ctx.fillText("General Ledger", 10, 200);
+	*/
 	
 function fnPrintMe2(printData, cvData, locX, locY){
   cv=cvData;

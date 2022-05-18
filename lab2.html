@@ -118,7 +118,7 @@ function fnPrintMe1(printData){
   c = document.getElementById(cv);
   ctx = c.getContext("2d");
   ctx.font = "italic bold 25pt Arial";
-  ctx.fillText(printData, 10, 10);
+  ctx.fillText(printData, 10, 50);
 }
 	
 	/*
@@ -272,7 +272,7 @@ main web page display area
 
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
-<button type="button" onclick="fnPrintMe('>>button pressed<<', 'canvas1', 100, 300, '20pt Courier')">fnPrintMe(>>button pressed<<)</button>
+<button type="button" onclick="fnPrintMe('>>button pressed fnPrintMe<<', 'canvas1', 100, 300, '20pt Courier')">fnPrintMe(>>button pressed<<)</button>
 	
 	<button type="button" onclick="fnPrintMe1('>>button pressed fnPrintMe1<<')">fnPrintMe(>>button pressed fnPrintMe1<<)</button>
 

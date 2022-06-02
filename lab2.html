@@ -70,9 +70,15 @@ place *all* script functions here\
 	
 	
 <script>
-	// vvvvvvvvvvvvvvvvvvvvvvvv
-	// update webpage functions
-	// ^^^^^^^^^^^^^^^^^^^^^^^^
+         /* 
+         vvvvvvvvvvvvvvvvvvvvvvvv
+	 update webpage functions (1)
+	 ^^^^^^^^^^^^^^^^^^^^^^^^ 
+	 */
+	
+	/*
+	This section contains functions to update and change the web page
+	*/
 	
 	// change a paragraph on the webpage
 	// using a string constant
@@ -95,6 +101,11 @@ function fnChgTable(){
 	
 }
 	
+      /* 
+      vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+      end update webpage functions (1)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+      */
 	
 	
 </script>
@@ -103,16 +114,21 @@ function fnChgTable(){
 	
 	
 <script>
-	// vvvvvvvvvvvvvvvv
-	// canvas functions
-	// ^^^^^^^^^^^^^^^^
+	/* 
+	vvvvvvvvvvvvvvvvvvvv
+	canvas functions (1)
+	^^^^^^^^^^^^^^^^^^^^ 
+	*/
+	
+	
 	
 	/*
 	// original and testing canvas printing function
 	vvvvvvvvvvvvvvvvvvv
-	function fnPrintMe1	
+	functions fnPrintMe	
 	^^^^^^^^^^^^^^^^^^^
 	*/
+	
 function fnPrintMe1(printData){
   cv="canvas1";
   c = document.getElementById(cv);
@@ -121,13 +137,13 @@ function fnPrintMe1(printData){
   ctx.fillText(printData, 10, 50);
 }
 	
-	/*
+	/* >>>>>>>>>>
 cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");
 ctx.font = "italic bold 20pt Arial";
 ctx.fillText("General Ledger", 10, 200);
-	*/
+	<<<<<<<<<< */
 	
 function fnPrintMe2(printData, cvData, locX, locY){
   cv=cvData;
@@ -140,7 +156,7 @@ function fnPrintMe2(printData, cvData, locX, locY){
 }	
 
 	// CANVAS PRINTING FUNCTION
-	/* 
+	/* >>>>>>>>>>
 	on going updated function for printing to a canvas [ fnPrintMe(printData) ]
 	fnPrintME() parameters
 		text to print ; printData
@@ -150,7 +166,7 @@ function fnPrintMe2(printData, cvData, locX, locY){
 		
 		font style, font size, font name ; fontStyle
 
-	*/
+	<<<<<<<<<< */
 	
 	
 	
@@ -165,13 +181,18 @@ function fnPrintMe(printData, cvData, locX, locY, fontStyle){
 
 	/*
 	vvvvvvvvvvvvvvvvvvvvvvv
-	END function fnPrintMe1	
+	END functions fnPrintMe	
 	^^^^^^^^^^^^^^^^^^^^^^^
 	*/
 	
 	
 	
-	
+	/* 
+	vvvvvvvvvvvvvvvvvvvvvvvv
+	end canvas functions (1)
+	^^^^^^^^^^^^^^^^^^^^^^^^ 
+	*/
+
 	
 </script>
 
@@ -203,25 +224,30 @@ END script functions (1)
 -->
 	
 	
-
 	
-	
-	
-<!-- HEAD END -->
+<!-- 
+vvvvvvvv     
+HEAD END 
+^^^^^^^^ 
+-->
 	
 </head>
 <!-- set the web page background colour [bgcolor=lightblue] -->
 <body bgcolor=lightblue>
 
-<!-- BODY START -->
+<!-- 
+vvvvvvvvvv
+BODY START 
+^^^^^^^^^^ 
+-->
 
 	
 
 	
 <!-- 
-vvvvvvvvvvvvvvvvvvv
-canvas (1)
-^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvvvvv
+setup canvas display (1)
+^^^^^^^^^^^^^^^^^^^^^^^^
 canvas display areas
 -->
 	
@@ -234,17 +260,17 @@ canvas display areas
 	
 	
 <!-- 
-vvvvvvvvvvvvvvvvvvv
-END canvas (1)
-^^^^^^^^^^^^^^^^^^^ 
+vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+END setup canvas display (1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 -->		
 	
 	
 	
 <!-- 
-vvvvvvvvvvvvvvvvvvv
-page definition (1)
-^^^^^^^^^^^^^^^^^^^ 
+vvvvvvvvvvvvvvvvvvvvvvv
+web page section (1)
+^^^^^^^^^^^^^^^^^^^^^^^ 
 main web page display area
 -->
 	
@@ -342,12 +368,16 @@ main web page display area
 	
 	
 	
-<!-- *****************
+<!-- 
+*****************
 VERSION TABLE 
-****************** -->	
-<br><br><br><br><br><br>
+****************** 
+-->	
+
+	<br><br><br><br><br><br>
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
+	v001.001.013.20220602.15:26 | draw a grid |
 	v001.001.013.20220602.15:26 | change canvas to 400x400 | chg GL font | change GL to canvas1 & mv to the top as a heading |
 	v001.001.013.20220518.22:13 | misc updates
 	v001.001.013.20220507.15:45 | misc body bgcolor
@@ -375,27 +405,29 @@ VERSION TABLE
 	
 	
 	
-<!-- ************
+<!-- 
+************
 END VERSION TABLE
-************* -->	
+************* 
+-->	
 	
 	
 	
 	
 	
 <!-- 
-vvvvvvvvvvvvvvvvvvv
-END page definition (1)
-^^^^^^^^^^^^^^^^^^^ 
+vvvvvvvvvvvvvvvvvvvvvvvvvvv
+END web page section (1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 -->	
 	
 
 	
 	
 <!-- 
-vvvvvvvvvvvvvvvvvvv
-scripts - code (1) 
-^^^^^^^^^^^^^^^^^^^ 
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+main scripting section - code (1) 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 main area for JavaScript
 -->
 	
@@ -403,29 +435,29 @@ main area for JavaScript
 
 <script>
 
-	/*
+	/* >>>>>>>>>>
 vvvvvvvvv	
 text fill
 ^^^^^^^^^
-	*/
+	<<<<<<<<<< */
 cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");
 ctx.font = "italic bold 20pt Arial";
-ctx.fillText("Canvas1", 10, 22);
+ctx.fillText("Canvas1", 10, 23);
 
 	
 // build the font style into the cf variable
 
-	/*	
+	/* >>>>>>>>>>	
 let cf = "italic " + "bold " + "20pt " + "Courier"; 
 ctx.font = cf;
 ctx.fillStyle = "Olive";
 ctx.fillText(cf, 20, 140);
-	*/
+	<<<<<<<<<< */
 	
 	
-	/*
+	/* >>>>>>>>>>
 cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");
@@ -440,7 +472,7 @@ ctx.font = "italic 8pt Arial";
 for (i=0; i<400; i=i+30){
 ctx.fillText(i, i, 10);
 }
-	*/	
+	<<<<<<<<<< */	
 
 </script>
 	
@@ -468,7 +500,7 @@ c = document.getElementById(cv);
 ctx = c.getContext("2d");
 
 
-	// draw a line
+	// draw a line >>>>>
 
 	// set line color
 ctx.strokeStyle = '#ff0000'; //red '#ff0000' 
@@ -482,9 +514,46 @@ ctx.lineWidth = 5;
 	// draw the line
 ctx.stroke();
 
+	// <<<<< end draw a line
+	
+	
+	// >>>>> draw a grid
+// prep the drawing mode	
+cv="canvas1";
+c = document.getElementById(cv);
+ctx = c.getContext("2d");
 
-	// draw a grid
+ctx.strokeStyle = '#0000ff'; //blue '#0000ff' 
+ctx.beginPath(); // start of line
+ctx.lineWidth = 5; // line width
+	
+xenddelta = 100;	
+xstart = 10;
+xend = xstart + xenddelta;
+xdelta = 10;
 
+yenddelta = 100;	
+ystart = 10;
+yend = ystart + yenddelta;
+ydelta = 10;
+
+ctx.moveTo(xstart, ystart); // move the pen to the start of the grid
+	
+for (x = xstart; x <= xend; x = x+xdelta){
+  ctx.moveTo(x, ystart);
+  ctx.lineTo(x, yend);
+  ctx.stroke();
+  
+  for (y = ystart; y <= yend; y	= y + ydelta){
+    ctx.moveTo(xstart, y);
+    ctx.lineTo(xend, y);
+    ctx.stroke();
+  }	  	
+	
+}
+	
+	
+	// <<<<< enddraw a grid
 	
 	
 	
@@ -497,9 +566,9 @@ ctx.stroke();
 	
 	
 <!-- 
-vvvvvvvvvvvvvvvvvvv
-END scripts - code (1)
-^^^^^^^^^^^^^^^^^^^ 
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+END main scripting section - code (1) 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 -->
 	
 

@@ -393,7 +393,7 @@ VERSION TABLE
 	<br><br><br><br><br><br>
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
-	v001.001.013.20220602.20:54| draw a grid | add another canvas |
+	v001.001.013.20220602.20:57| draw a grid | add another canvas |
 	v001.001.013.20220602.15:26 | change canvas to 400x400 | chg GL font | change GL to canvas1 & mv to the top as a heading |
 	v001.001.013.20220518.22:13 | misc updates
 	v001.001.013.20220507.15:45 | misc body bgcolor
@@ -546,7 +546,7 @@ ctx.lineWidth = 2; // line width
 	
 	
 	// *********
-	alert("ok1");
+//	alert("ok1");
 	//**********
 	
 	
@@ -559,7 +559,7 @@ x1delta = x1enddelta / x1division;
 
 	
 	// *********
-	alert(x1delta);
+//	alert(x1delta);
 	//**********
 	
 
@@ -572,7 +572,7 @@ x2delta = x2enddelta / x2division;
 	
 	
 	// *********
-	alert(x2delta);
+//	alert(x2delta);
 	//**********
 	
 	
@@ -588,7 +588,7 @@ ctx.moveTo(x1start, y1start); // move the pen to the start of the grid
 	
 	
 	// *********
-	alert(y1delta);
+//	alert(y1delta);
 	//**********
 	
 
@@ -598,9 +598,7 @@ for (x1 = x1start; x1 <= x1end; x1 = x1+x1delta){
   ctx.lineTo(x1, y1end);
   ctx.stroke();
   
-	alert(x1);
-	
-  for (y1 = ystart; y1 <= y1end; y1 = y1 + y1delta){
+  for (y1 = y1start; y1 <= y1end; y1 = y1 + y1delta){
     ctx.moveTo(x1start, y1);
     ctx.lineTo(x1end, y1);
     ctx.stroke();

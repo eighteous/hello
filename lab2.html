@@ -393,7 +393,7 @@ VERSION TABLE
 	<br><br><br><br><br><br>
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
-	v001.001.013.20220602.19:43 | draw a grid | add another canvas |
+	v001.001.013.20220602.19:46 | draw a grid | add another canvas |
 	v001.001.013.20220602.15:26 | change canvas to 400x400 | chg GL font | change GL to canvas1 & mv to the top as a heading |
 	v001.001.013.20220518.22:13 | misc updates
 	v001.001.013.20220507.15:45 | misc body bgcolor
@@ -535,7 +535,7 @@ ctx.stroke();
 	
 	// >>>>> draw a grid
 // prep the drawing mode	
-	alert("ok");
+
 cv="canvas1";
 c = document.getElementById(cv);
 ctx = c.getContext("2d");
@@ -543,6 +543,10 @@ ctx = c.getContext("2d");
 ctx.strokeStyle = '#0000ff'; //blue '#0000ff' 
 ctx.beginPath(); // start of line
 ctx.lineWidth = 2; // line width
+
+	// *********
+	alert("ok");
+	//**********
 	
 x1enddelta = 200;	
 x1divsion = 10; // divide the line into this number of equal parts

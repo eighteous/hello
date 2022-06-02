@@ -393,7 +393,7 @@ VERSION TABLE
 	<br><br><br><br><br><br>
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
-	v001.001.013.20220602.19:46 | draw a grid | add another canvas |
+	v001.001.013.20220602.19:52 | draw a grid | add another canvas |
 	v001.001.013.20220602.15:26 | change canvas to 400x400 | chg GL font | change GL to canvas1 & mv to the top as a heading |
 	v001.001.013.20220518.22:13 | misc updates
 	v001.001.013.20220507.15:45 | misc body bgcolor
@@ -543,10 +543,8 @@ ctx = c.getContext("2d");
 ctx.strokeStyle = '#0000ff'; //blue '#0000ff' 
 ctx.beginPath(); // start of line
 ctx.lineWidth = 2; // line width
-
-	// *********
-	alert("ok");
-	//**********
+	
+	
 	
 x1enddelta = 200;	
 x1divsion = 10; // divide the line into this number of equal parts
@@ -554,6 +552,13 @@ x1start = 10;
 x1end = x1start + x1enddelta;
 x1delta = x1enddelta / x1division;
 
+	
+	// *********
+	alert("ok1");
+	//**********
+	
+
+	
 x2enddelta = 200;	
 x1divsion = 10; // divide the line into this number of equal parts
 x2start = 10;
@@ -568,6 +573,14 @@ y1end = y1start + y1enddelta;
 y1delta = y1enddelta / y1division;
 
 ctx.moveTo(xstart, ystart); // move the pen to the start of the grid
+	
+	
+	
+	// *********
+	alert("ok2");
+	//**********
+	
+
 	
 for (x1 = x1start; x1 <= x1end; x1 = x1+x1delta){
   ctx.moveTo(x1, y1start);

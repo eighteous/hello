@@ -564,9 +564,9 @@ x1delta = x1enddelta / x1division;
 	
 
 	
-x2enddelta = 200;	
+x2enddelta = 100;	
 x2division = 10; // divide the line into this number of equal parts
-x2start = 10;
+x2start = (x1enddelta - x2enddelta) /2 + x1start;
 x2end = x2start + x2enddelta;
 x2delta = x2enddelta / x2division;
 	
@@ -578,7 +578,7 @@ x2delta = x2enddelta / x2division;
 	
 	
 y1enddelta = 200;	
-y1division = 6; // divide the line into this number of equal parts
+y1division = 10; // divide the line into this number of equal parts
 y1start = 50;
 y1end = y1start + y1enddelta;
 y1delta = y1enddelta / y1division;
@@ -593,8 +593,8 @@ ctx.moveTo(x1start, y1start); // move the pen to the start of the grid
 	
 
 	
-for (x1 = x1start; x1 <= x1end; x1 = x1+x1delta){
-  ctx.moveTo(x1, y1start);
+for (x1 = x1start, x2 = x2start; x1 <= x1end; x1 = x1+x1delta, x2 = x2+x2delta){
+  ctx.moveTo(x2, y1start);
   ctx.lineTo(x1, y1end);
   ctx.stroke();
   

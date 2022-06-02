@@ -393,7 +393,7 @@ VERSION TABLE
 	<br><br><br><br><br><br>
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
-	v001.001.013.20220602.18.11 | draw a grid | add another canvas |
+	v001.001.013.20220602.19:40 | draw a grid | add another canvas |
 	v001.001.013.20220602.15:26 | change canvas to 400x400 | chg GL font | change GL to canvas1 & mv to the top as a heading |
 	v001.001.013.20220518.22:13 | misc updates
 	v001.001.013.20220507.15:45 | misc body bgcolor
@@ -543,26 +543,35 @@ ctx.strokeStyle = '#0000ff'; //blue '#0000ff'
 ctx.beginPath(); // start of line
 ctx.lineWidth = 2; // line width
 	
-xenddelta = 200;	
-xstart = 10;
-xend = xstart + xenddelta;
-xdelta = 20;
+x1enddelta = 200;	
+x1divsion = 10; // divide the line into this number of equal parts
+x1start = 10;
+x1end = x1start + x1enddelta;
+x1delta = x1enddelta / x1division;
 
-yenddelta = 300;	
-ystart = 50;
-yend = ystart + yenddelta;
-ydelta = 30;
+x2enddelta = 200;	
+x1divsion = 10; // divide the line into this number of equal parts
+x2start = 10;
+x2end = x2start + x2enddelta;
+x2delta = x2enddelta / x2division;
+	
+	
+y1enddelta = 300;	
+y1divsion = 10; // divide the line into this number of equal parts
+y1start = 50;
+y1end = y1start + y1enddelta;
+y1delta = y1enddelta / y1division;
 
 ctx.moveTo(xstart, ystart); // move the pen to the start of the grid
 	
-for (x = xstart; x <= xend; x = x+xdelta){
-  ctx.moveTo(x, ystart);
-  ctx.lineTo(x, yend);
+for (x1 = x1start; x1 <= x1end; x1 = x1+x1delta){
+  ctx.moveTo(x1, y1start);
+  ctx.lineTo(x1, y1end);
   ctx.stroke();
   
-  for (y = ystart; y <= yend; y	= y + ydelta){
-    ctx.moveTo(xstart, y);
-    ctx.lineTo(xend, y);
+  for (y1 = ystart; y1 <= y1end; y1 = y1 + y1delta){
+    ctx.moveTo(x1start, y1);
+    ctx.lineTo(x1end, y1);
     ctx.stroke();
   }	  	
 	

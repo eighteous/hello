@@ -348,7 +348,7 @@ VERSION TABLE
 <br><br><br><br><br><br>
 	<h4>	Version Table -- reverse</h4>
 	<pre>	
-	v001.001.013.20220602.15:16 | change canvas to 400x400 | chg GL font 
+	v001.001.013.20220602.15:26 | change canvas to 400x400 | chg GL font | change GL to canvas1 & mv to the top as a heading |
 	v001.001.013.20220518.22:13 | misc updates
 	v001.001.013.20220507.15:45 | misc body bgcolor
         v001.001.013.20220501.21:33 | update function fnPrintMe()
@@ -474,11 +474,11 @@ ctx = c.getContext("2d");
 ctx.strokeStyle = '#ff0000'; //red '#ff0000' 
 	// start of line
 ctx.beginPath();
-ctx.moveTo(0, 206);
+ctx.moveTo(0, 30);
 	// draw line to here
-ctx.lineTo(400, 206);
+ctx.lineTo(400, 30);
 	// line width
-ctx.lineWidth = 10;
+ctx.lineWidth = 5;
 	// draw the line
 ctx.stroke();
 

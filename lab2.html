@@ -300,18 +300,28 @@ main web page display area
 
 	
 <!-- test buttons to call functions -->
+	
+	
+<!-- calling funbctions to change the web page -->
 
 <button type="button" onclick="fnChgPara()">fnChgPara</button>
 <button type="button" onclick="fnChgNum()">fnChgNum</button>
-<button type="button" onclick="fnPrintMe('>>button pressed fnPrintMe<<', 'canvas1', 100, 300, '20pt Courier')">fnPrintMe(>>button pressed<<)</button>
-	
-	<button type="button" onclick="fnPrintMe1('>>button pressed fnPrintMe1<<')">fnPrintMe(>>button pressed fnPrintMe1<<)</button>
 
 	
+<!-- calling funtions to write to the canvas -->
+<button type="button" onclick="fnPrintMe('>>button pressed fnPrintMe<<', 'canvas1', 100, 300, '20pt Courier')">fnPrintMe(>>button pressed<<)</button>	
+<button type="button" onclick="fnPrintMe1('>>button pressed fnPrintMe1<<')">fnPrintMe(>>button pressed fnPrintMe1<<)</button>
+
+	
+
+<!-- call a function that changes the table -->
 <button type="button" onclick="fnChgTable()">fnChgTable</button>
 	
 <br><br>
-	<button type="button" onclick="extHelloWorld()">extHelloWorld</button>
+	
+<!-- calling an external function -->
+<button type="button" onclick="extHelloWorld()">extHelloWorld</button>
+
 <br><br>
 	
 <!-- END test buttons to call functions -->
@@ -320,7 +330,8 @@ main web page display area
 	
 	
 <!-- test error message and alert functions -->
-
+<!-- buttons that call alert dialog boxes -->
+	
 <button type="button" onclick="fnAlertHelloWorld()">fnAlertHelloWorld()</button>
 
 <button type="button" onclick="fnAlertError1()">fnAlertError1()</button>

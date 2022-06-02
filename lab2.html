@@ -551,7 +551,7 @@ ctx.lineWidth = 2; // line width
 	
 	
 	
-x1enddelta = 200;	
+x1enddelta = 20;	
 x1division = 10; // divide the line into this number of equal parts
 x1start = 10;
 x1end = x1start + x1enddelta;
@@ -564,7 +564,7 @@ x1delta = x1enddelta / x1division;
 	
 
 	
-x2enddelta = 200;	
+x2enddelta = 20;	
 x2division = 10; // divide the line into this number of equal parts
 x2start = 10;
 x2end = x2start + x2enddelta;
@@ -577,7 +577,7 @@ x2delta = x2enddelta / x2division;
 	
 	
 	
-y1enddelta = 300;	
+y1enddelta = 30;	
 y1division = 10; // divide the line into this number of equal parts
 y1start = 50;
 y1end = y1start + y1enddelta;
@@ -598,6 +598,8 @@ for (x1 = x1start; x1 <= x1end; x1 = x1+x1delta){
   ctx.lineTo(x1, y1end);
   ctx.stroke();
   
+	alert(x1);
+	
   for (y1 = ystart; y1 <= y1end; y1 = y1 + y1delta){
     ctx.moveTo(x1start, y1);
     ctx.lineTo(x1end, y1);
